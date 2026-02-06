@@ -21,6 +21,11 @@ for i in range(2,numbertwo):
 
 print(factor,factor2)
 
-greatestfactor = [factor == factor2]
+commonfactor = []
 
-print(greatestfactor)
+for i in factor:
+    if i in factor2:
+        commonfactor.append(i)
+
+gcf = str(max(commonfactor))
+print("Greatest Common Factor is " + gcf)
